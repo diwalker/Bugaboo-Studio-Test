@@ -57,6 +57,35 @@ Arquivos .GLB sendo visualizados usando MODEL VIEWER dentro de uma modal.
 ![Captura de tela 2023-09-22 223258](https://github.com/diwalker/Bugaboo-Studio-Test/assets/13918844/98db46e1-16ae-48fa-a7ce-ef826f84ab74)
 
 # Rodando o Projeto.
+Primeiramente abra o Cmd ou Terminal e clone o repositório em alguma pasta de sua escolha com `git clone https://github.com/diwalker/Bugaboo-Studio-Test.git`, no meu caso em Documentos.
+![image](https://github.com/diwalker/Bugaboo-Studio-Test/assets/13918844/33536a56-8def-41d8-9651-f61bce1a1508)
+
+Abra a pasta do projeto com `cd Bugaboo-Studio-Test` e depois rode `npm install` e aguarde a instalação das dependências.
+![image](https://github.com/diwalker/Bugaboo-Studio-Test/assets/13918844/edab4381-4fe8-4dbf-9771-a6dbf661d51c)
+
+Após a instalação de dependências, limpe a tela com `cls` se for Windows ou `clear` no Terminal Linux, precisamos rodar o servidor para o gerenciamento do projeto.
+Para isso, entre no diretório do gerenciador com `cd back` e logo em seguida execute o servidor com `node server.js`. Ele irá ficar rodando na porta:3000 como a imagem abaixo.
+![image](https://github.com/diwalker/Bugaboo-Studio-Test/assets/13918844/4083e0cb-f49b-45f1-8274-8e33eca62ea7)
+
+Agora, com o servidor rodando. entre a pasta do projeto e abra o arquivo index.html, irá abrir o Form de Login para autencicação.
+Entre com o seguinte usuário e senha e clique em Fazer Login:
+email: dwalkerserver@gmail.com
+password: ogumiansa13@
+![image](https://github.com/diwalker/Bugaboo-Studio-Test/assets/13918844/2243cf21-6017-4189-9ff7-ff258572abe9)
+
+Irá abrir o Gerenciador de arquivos, com as opções de envio, exibição de arquivos e se clicado no link do arquivo enviado, abre um modal visualizando o arquivo .GLB podendo controlar o arquivodentro do modal com o mouse!
+![image](https://github.com/diwalker/Bugaboo-Studio-Test/assets/13918844/d0e67438-d8b4-4518-9dac-7f1a133cce94)
+![image](https://github.com/diwalker/Bugaboo-Studio-Test/assets/13918844/798d18f4-dca8-4608-a022-e854b38ef7aa)
+
+Excelente desafio, que me fez estudar mais sobre aextensão GLB e como a visualizar. Agradeço imensamente a oportunidade e aguardo um retorno. 
+Diego Silva.
+
+
+
+
+
+
+
 
 
 
