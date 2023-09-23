@@ -27,6 +27,7 @@ b. Crie uma visualização dedicada do Model Viewer para cada arquivo GLB.
 As seguintes bibliotecas e módulos foram usados neste projeto:
 
 - [**cors**](https://www.npmjs.com/package/cors) (^2.8.5) 🔄 - Middleware para permitir solicitações de origens cruzadas (CORS).
+- [**express**](https://www.npmjs.com/package/express) (^4.17.1) 🚀 - Framework web para Node.js.
 - [**firebase**](https://www.npmjs.com/package/firebase) (^9.4.0) 🔥 - Biblioteca para integração com o Firebase.
 - [**fs**](https://www.npmjs.com/package/fs) (0.0.1-security) 📁 - Módulo de sistema de arquivos (File System).
 - [**jsonwebtoken**](https://www.npmjs.com/package/jsonwebtoken) (^9.0.2) 🔐 - Implementação de JSON Web Tokens (JWT).
@@ -37,7 +38,8 @@ As seguintes bibliotecas e módulos foram usados neste projeto:
 - [**express**](https://www.npmjs.com/package/express) (^4.18.2) 🚀 - Framework web para Node.js.
 - [**express-fileupload**](https://www.npmjs.com/package/express-fileupload) (^1.4.0) 📤 - Middleware para lidar com uploads de arquivos no Express.
 - [**file-type**](https://www.npmjs.com/package/file-type) (^18.5.0) 📄 - Detector de tipos de arquivos baseado em cabeçalhos de arquivo.
-
+- [**fs**](https://www.npmjs.com/package/fs) (^0.0.1-security) 📁 - Módulo de sistema de arquivos (File System).
+- [**multer**](https://www.npmjs.com/package/multer) (^1.4.5-lts.1) 📁 - Middleware para manipulação de uploads de arquivos.
 
 Certifique-se de instalar essas dependências usando `npm install` antes de iniciar seu projeto.
 
