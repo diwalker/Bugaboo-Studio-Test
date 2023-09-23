@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/back/styles/manager/manager.css">
+  <title>Gerenciador de Arquivos</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Gerenciador de Arquivos</h1>
+    
+    <!-- Formulário para fazer upload de arquivos -->
+    <form class="upload" action="http://localhost:3000/uploads" method="POST" enctype="multipart/form-data">
+      <input class="input" type="file" name="file" id="fileInput" accept=".glb">
+      <button class="send-button" id="send-button" type="submit">Enviar</button>
+      <button class="list-button" id="list-button" type="button">Exibir arquivos</button>
+    </form>
+
+    <!-- Lista de arquivos -->
+    <div class="file-list" id="fileList">
+      <!-- Aqui serão exibidos os arquivos -->
+    </div>
+  </div>
+
+  <section>
+    <img id="vr" src="./assets/vr.png">
+  </section>
+  
+  <!-- Modal para exibir arquivos 3D -->
+  <div id="modal" class="modal">
+    <img src="./assets/close.png" alt="Ícone de Fechar" class="close-icon" onclick="closeModal()">
+    <div id="modelViewerContainer" class="model-viewer-container">
+      <!-- Movido o <model-viewer> para dentro do div de container -->
+      <model-viewer id="modelViewer" src=""></model-viewer>
+    </div>
+  </div>
+  
+
+  <script>
+    // Função para listar arquivos e exibir no modal
+    document.getElementById('list-button').addEventListener('click', function () {
+      fetch('http://localhost:3000/list-files')
+        .then(response => response.json())
+        .then(data => {
+          const fileList = document.getElementById('fileList');
+          fileList.innerHTML = '';
+    
+          if (data.error) {
+            const errorMessage = document.createElement('p');
+            errorMessage.textContent = data.error;
+            fileList.appendChild(errorMessage);
+          } else if (data.files.length === 0) {
+            const noFilesMessage = document.createElement('p');
+            noFilesMessage.textContent = 'Nenhum arquivo enviado ainda.';
+            fileList.appendChild(noFilesMessage);
+          } else {
+            data.files.forEach(file => {
+              const linkItem = document.createElement('a');
+              linkItem.textContent = file;
+              linkItem.href = '#'; // Adicione um link temporário; o href real é configurado no evento de clique
+              fileList.appendChild(linkItem);
+    
+              // Adiciona um evento de clique ao link
+              linkItem.addEventListener('click', function (event) {
+                event.preventDefault(); // Evite a ação padrão do link (navegar para uma nova página)
+    
+                // Abre o modal com o Model Viewer aqui
+                openModalWithModelViewer(file);
+              });
+    
+              // Adiciona uma quebra de linha para separar os links
+              const lineBreak = document.createElement('br');
+              fileList.appendChild(lineBreak);
+            });
+          }
+        })
+        .catch(error => console.error('Erro ao listar arquivos:', error));
+    });
+    
+    // Função para abrir o modal com o Model Viewer
+    function openModalWithModelViewer(filename) {
+      // Configura o Model Viewer com o arquivo GLB correspondente
+      const modelViewer = document.getElementById('modelViewer');
+      modelViewer.src = `http://localhost:3000/uploads/${filename}`; // Use o caminho correto para o servidor
+    
+      // Define as opções do Model Viewer
+      modelViewer.setAttribute('autoplay', true); // Iniciar a animação automaticamente
+      modelViewer.setAttribute('camera-controls', true); // Permitir que o usuário controle a câmera
+      modelViewer.setAttribute('ar', false); // Desativar a opção de realidade aumentada
+      modelViewer.setAttribute('auto-rotate', true); // Ativar rotação automática
+      modelViewer.setAttribute('shadow-intensity', 1);
+    
+      // Define as dimensões do Model Viewer
+      modelViewer.style.width = '800px'; // Definir a largura para 800 pixels
+      modelViewer.style.height = '800px'; // Definir a altura para 800 pixels
+    
+      // Abre o modal
+      const modal = document.getElementById('modal');
+      modal.style.display = 'block';
+      modal.style.width = '800px'; // Definir a largura do modal
+      modal.style.height = '800px'; // Definir a altura do modal
+    
+      // Adiciona um botão de fechar
+      const closeButton = document.createElement('span');
+      closeButton.textContent = 'X';
+      closeButton.className = 'close-button';
+      modal.appendChild(closeButton);
+    
+      // Adiciona um evento para fechar o modal quando o usuário clica no botão de fechar
+      closeButton.addEventListener('click', function () {
+        closeModal();
+      });
+    }
+    
+    // Função para fechar o modal
+    function closeModal() {
+      const modal = document.getElementById('modal');
+      const modelViewer = document.getElementById('modelViewer');
+      modal.style.display = 'none';
+      modelViewer.removeAttribute('src'); // Remove o atributo src para parar a animação
+      modal.removeChild(closeButton); // Remove o botão de fechar
+    }
+
+    // Adiciona um evento de teclado no documento para fechar o modal quando a tecla "Esc" for pressionada
+    document.addEventListener('keydown', function (event) {
+      if (event.key === 'Escape') {
+        closeModal();
+      }
+    });
+  </script>
+
+  <!-- Importa o componente do Model Viewer -->
+  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.1.1/model-viewer.min.js"></script>
+
+  <!-- Usa o Model Viewer como qualquer outro elemento HTML -->
+  <model-viewer alt="Neil Armstrong's Spacesuit from the Smithsonian Digitization Programs Office and National Air and Space Museum" src="shared-assets/models/NeilArmstrong.glb" ar environment-image="shared-assets/environments/moon_1k.hdr" poster="shared-assets/models/NeilArmstrong.webp" shadow-intensity="1" camera-controls touch-action="pan-y"></model-viewer>
+</body>
+</html>

@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Lato';
+    color: aliceblue;
+}
+
+body {
+    background: rgb(9,106,208);
+    background: -moz-linear-gradient(90deg, rgba(9,106,208,1) 0%, rgba(15,203,241,1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(9,106,208,1) 0%, rgba(15,203,241,1) 100%);
+    background: linear-gradient(90deg, rgba(9,106,208,1) 0%, rgba(15,203,241,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#096ad0",endColorstr="#0fcbf1",GradientType=1);
+    height: 100vh; /* 100% da altura da viewport */
+    display: flex;
+    align-items: center;
+}
+
+.upload {
+    display: flex;
+    flex-direction: column; 
+}
+
+.custom-file-upload {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    border: 1px solid #007bff;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+
+#send-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #0b1e3a;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 12px;
+}
+
+#send-button:hover {
+    background-color: #0056b3; /* Cor de destaque no hover */
+}
+
+#list-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #0b1e3a;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 12px;
+}
+
+#list-button:hover {
+    background-color: #0056b3; /* Cor de destaque no hover */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 200px;
+    border: 3px solid;
+    padding: 25px;
+    border-radius: 5%;
+
+}
+
+h1, .send-button, .input {
+    margin-bottom: 25px;
+}
+
+#vr {
+    height: 800px;
+    margin-left: 280px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 800px;
+    height: 800px;
+    background-color: white; /* Adicione o fundo branco */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    padding: 20px;
+    overflow: hidden;
+    border-radius: 3%;
+  }
+  
+.close-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 35px; /* Largura desejada para o ícone */
+    height: 35px; /* Altura desejada para o ícone */
+    cursor: pointer;
+    z-index: 999; /* Certifique-se de que o ícone esteja acima do modal */
+}
+  
+.delete-icon {
+    width: 20px; /* Largura desejada para o ícone de exclusão */
+    height: 20px; /* Altura desejada para o ícone de exclusão */
+    cursor: pointer;
+    margin-left: 10px; /* Espaçamento entre o ícone de exclusão e o nome do arquivo */
+    vertical-align: middle; /* Alinhar verticalmente com o texto */
+  }
+  
