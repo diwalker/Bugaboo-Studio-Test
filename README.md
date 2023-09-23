@@ -78,7 +78,7 @@ Irá abrir o Gerenciador de arquivos, com as opções de envio, exibição de ar
 ![image](https://github.com/diwalker/Bugaboo-Studio-Test/assets/13918844/d0e67438-d8b4-4518-9dac-7f1a133cce94)
 ![image](https://github.com/diwalker/Bugaboo-Studio-Test/assets/13918844/798d18f4-dca8-4608-a022-e854b38ef7aa)
 
-Excelente desafio, que me fez estudar mais sobre aextensão GLB e como a visualizar. Agradeço imensamente a oportunidade e aguardo um retorno. 
+Excelente desafio, que me fez estudar mais sobre a extensão GLB e como a visualizar. Agradeço imensamente a oportunidade e aguardo um retorno positivo.<br>
 Diego Silva.
 
 
