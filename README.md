@@ -57,7 +57,8 @@ Arquivos .GLB sendo visualizados usando MODEL VIEWER dentro de uma modal.
 ![Captura de tela 2023-09-22 223258](https://github.com/diwalker/Bugaboo-Studio-Test/assets/13918844/98db46e1-16ae-48fa-a7ce-ef826f84ab74)
 
 # Rodando o Projeto.
-Primeiramente abra o Cmd ou Terminal e clone o repositório em alguma pasta de sua escolha com `git clone https://github.com/diwalker/Bugaboo-Studio-Test.git`, no meu caso em Documentos.
+Primeiramente abra o Cmd ou Terminal e clone o repositório em alguma pasta de sua escolha com 
+`git clone https://github.com/diwalker/Bugaboo-Studio-Test.git`, no meu caso em Documentos.
 ![image](https://github.com/diwalker/Bugaboo-Studio-Test/assets/13918844/33536a56-8def-41d8-9651-f61bce1a1508)
 
 Abra a pasta do projeto com `cd Bugaboo-Studio-Test` e depois rode `npm install` e aguarde a instalação das dependências.
