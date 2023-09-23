@@ -26,27 +26,24 @@ b. Crie uma visualização dedicada do Model Viewer para cada arquivo GLB.
 
 As seguintes bibliotecas e módulos foram usados neste projeto:
 
-- [cors](https://www.npmjs.com/package/cors) (v2.8.5) - Middleware para habilitar o Cross-Origin Resource Sharing (CORS) em seu aplicativo Express.
+- [**cors**](https://www.npmjs.com/package/cors) (^2.8.5) 🔄 - Middleware para permitir solicitações de origens cruzadas (CORS).
+- [**firebase**](https://www.npmjs.com/package/firebase) (^9.4.0) 🔥 - Biblioteca para integração com o Firebase.
+- [**fs**](https://www.npmjs.com/package/fs) (0.0.1-security) 📁 - Módulo de sistema de arquivos (File System).
+- [**jsonwebtoken**](https://www.npmjs.com/package/jsonwebtoken) (^9.0.2) 🔐 - Implementação de JSON Web Tokens (JWT).
+- [**mime-types**](https://www.npmjs.com/package/mime-types) (^2.1.30) 📃 - Biblioteca para trabalhar com tipos MIME.
+- [**multer**](https://www.npmjs.com/package/multer) (^1.4.2) 📁 - Middleware para manipulação de uploads de arquivos.
+- [**path**](https://www.npmjs.com/package/path) (^0.12.7) 📂 - Utilitário para manipulação de caminhos de arquivo.
+- [**esm**](https://www.npmjs.com/package/esm) (^3.2.25) 🔍 - Suporte a ECMAScript Modules para o Node.js.
+- [**express**](https://www.npmjs.com/package/express) (^4.18.2) 🚀 - Framework web para Node.js.
+- [**express-fileupload**](https://www.npmjs.com/package/express-fileupload) (^1.4.0) 📤 - Middleware para lidar com uploads de arquivos no Express.
+- [**file-type**](https://www.npmjs.com/package/file-type) (^18.5.0) 📄 - Detector de tipos de arquivos baseado em cabeçalhos de arquivo.
 
-- [express](https://www.npmjs.com/package/express) (v4.17.1) - Um framework web rápido, minimalista e flexível para Node.js que facilita a criação de aplicativos web e APIs.
-
-- [firebase](https://www.npmjs.com/package/firebase) (v9.4.0) - O SDK oficial do Firebase para JavaScript, que permite a integração do Firebase em seu aplicativo Node.js.
-
-- [fs](https://www.npmjs.com/package/fs) (v0.0.1-security) - Biblioteca interna para manipulação de sistema de arquivos no Node.js.
-
-- [jsonwebtoken](https://www.npmjs.com/package/jsonwebtoken) (v9.0.2) - Implementação de JSON Web Tokens (JWT) para autenticação e autorização.
-
-- [mime-types](https://www.npmjs.com/package/mime-types) (v2.1.30) - Um módulo para ajudar na resolução do tipo MIME de extensões de arquivo.
-
-- [multer](https://www.npmjs.com/package/multer) (v1.4.2) - Middleware para Node.js que facilita o manuseio de uploads de arquivos, útil para processar envios de arquivos em formulários da web.
-
-- [path](https://www.npmjs.com/package/path) (v0.12.7) - Módulo interno do Node.js que fornece utilitários para trabalhar com caminhos de arquivos e diretórios.
 
 Certifique-se de instalar essas dependências usando `npm install` antes de iniciar seu projeto.
 
 # Screenshots do Projeto.
 
-Página de Login 
+Página de Login.
 ![Captura de tela 2023-09-22 223209](https://github.com/diwalker/Bugaboo-Studio-Test/assets/13918844/3a5b280a-d83c-4516-b792-e9273a3b4c78)
 
 Página de Upload/Gerenciamento de arquivos.
@@ -56,6 +53,10 @@ Arquivos .GLB sendo visualizados usando MODEL VIEWER dentro de uma modal.
 ![Captura de tela 2023-09-22 223859](https://github.com/diwalker/Bugaboo-Studio-Test/assets/13918844/439d4296-ca0a-40b2-bf4a-2ab56d74a3f4)
 ![Captura de tela 2023-09-22 223325](https://github.com/diwalker/Bugaboo-Studio-Test/assets/13918844/3b6073de-24bf-4c44-8259-93311a42a904)
 ![Captura de tela 2023-09-22 223258](https://github.com/diwalker/Bugaboo-Studio-Test/assets/13918844/98db46e1-16ae-48fa-a7ce-ef826f84ab74)
+
+# Como rodar o Projeto.
+
+
 
 
 
