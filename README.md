@@ -5,7 +5,7 @@ Sua tarefa é criar um sistema web que permita aos usuários fazer upload de arq
 GLB (formato de arquivo 3D) e visualizá-los usando o Model Viewer. Você precisará
 desenvolver o backend, frontend e o gerenciamento de dados para este sistema.
 
-#Features
+# Features
 1. Autenticação de Usuário:
 a. Os usuários podem fazer login usando login e senha.
 b. A autenticação deve ser integrada com a sua conta para verificar as
