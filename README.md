@@ -56,7 +56,8 @@ Arquivos .GLB sendo visualizados usando MODEL VIEWER dentro de uma modal.
 ![Captura de tela 2023-09-22 223325](https://github.com/diwalker/Bugaboo-Studio-Test/assets/13918844/3b6073de-24bf-4c44-8259-93311a42a904)
 ![Captura de tela 2023-09-22 223258](https://github.com/diwalker/Bugaboo-Studio-Test/assets/13918844/98db46e1-16ae-48fa-a7ce-ef826f84ab74)
 
-# Como rodar o Projeto.
+# Rodando o Projeto.
+
 
 
 
