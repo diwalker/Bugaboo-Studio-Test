@@ -1,6 +1,4 @@
 # Desafio Técnico - Gerenciador de Arquivos GLB com Integração ao Model Viewer.
-
-Descrição:
 Sua tarefa é criar um sistema web que permita aos usuários fazer upload de arquivos
 GLB (formato de arquivo 3D) e visualizá-los usando o Model Viewer. Você precisará
 desenvolver o backend, frontend e o gerenciamento de dados para este sistema.
@@ -23,7 +21,6 @@ carregados.
 b. Crie uma visualização dedicada do Model Viewer para cada arquivo GLB.
 
 # Dependências do Projeto
-
 As seguintes bibliotecas e módulos foram usados neste projeto:
 
 - [**cors**](https://www.npmjs.com/package/cors) (^2.8.5) 🔄 - Middleware para permitir solicitações de origens cruzadas (CORS).
@@ -44,7 +41,6 @@ As seguintes bibliotecas e módulos foram usados neste projeto:
 Certifique-se de instalar essas dependências usando `npm install` antes de iniciar seu projeto.
 
 # Screenshots do Projeto.
-
 Página de Login.
 ![Captura de tela 2023-09-22 223209](https://github.com/diwalker/Bugaboo-Studio-Test/assets/13918844/3a5b280a-d83c-4516-b792-e9273a3b4c78)
 
@@ -57,7 +53,7 @@ Arquivos .GLB sendo visualizados usando MODEL VIEWER dentro de uma modal.
 ![Captura de tela 2023-09-22 223258](https://github.com/diwalker/Bugaboo-Studio-Test/assets/13918844/98db46e1-16ae-48fa-a7ce-ef826f84ab74)
 
 # Rodando o Projeto.
-Primeiramente abra o Cmd ou Terminal e clone o repositório em alguma pasta de sua escolha com 
+Primeiramente abra o Cmd ou Terminal e clone o repositório em alguma pasta de sua escolha com<br> 
 `git clone https://github.com/diwalker/Bugaboo-Studio-Test.git`, no meu caso em Documentos.
 ![image](https://github.com/diwalker/Bugaboo-Studio-Test/assets/13918844/33536a56-8def-41d8-9651-f61bce1a1508)
 
