@@ -62,8 +62,8 @@ Após a instalação de dependências, limpe a tela com `cls` se for Windows ou 
 Para isso, entre no diretório do gerenciador com `cd back` e logo em seguida execute o servidor com `node server.js`. Ele irá ficar rodando na porta:3000 como a imagem abaixo.
 
 Agora, com o servidor rodando. entre a pasta do projeto e abra o arquivo index.html, irá abrir o Form de Login para autencicação.
-Entre com o seguinte usuário e senha e clique em Fazer Login:
-email: dwalkerserver@gmail.com
+Entre com o seguinte usuário e senha e clique em Fazer Login:<br>
+email: dwalkerserver@gmail.com<br>
 password: ogumiansa13@
 
 Irá abrir o Gerenciador de arquivos, com as opções de envio, exibição de arquivos e se clicado no link do arquivo enviado, abre um modal visualizando o arquivo .GLB podendo controlar o arquivodentro do modal com o mouse!
