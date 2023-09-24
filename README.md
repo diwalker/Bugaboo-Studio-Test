@@ -42,37 +42,31 @@ Certifique-se de instalar essas dependências usando `npm install` antes de inic
 
 # Screenshots do Projeto.
 Página de Login.
-![Captura de tela 2023-09-22 223209](https://github.com/diwalker/Bugaboo-Studio-Test/assets/13918844/3a5b280a-d83c-4516-b792-e9273a3b4c78)
+![image](https://github.com/diwalker/Bugaboo-Studio-Test/assets/13918844/f6659b53-e235-4f10-bb82-6232e2902373)
 
 Página de Upload/Gerenciamento de arquivos.
-![Captura de tela 2023-09-22 223231](https://github.com/diwalker/Bugaboo-Studio-Test/assets/13918844/1a8f0dac-2605-4fb6-959d-e9fb28cd6da3)
+![image](https://github.com/diwalker/Bugaboo-Studio-Test/assets/13918844/ca033829-58a6-4d74-8521-a3231e5f0664)
 
 Arquivos .GLB sendo visualizados usando MODEL VIEWER dentro de uma modal.
-![Captura de tela 2023-09-22 223859](https://github.com/diwalker/Bugaboo-Studio-Test/assets/13918844/439d4296-ca0a-40b2-bf4a-2ab56d74a3f4)
-![Captura de tela 2023-09-22 223325](https://github.com/diwalker/Bugaboo-Studio-Test/assets/13918844/3b6073de-24bf-4c44-8259-93311a42a904)
-![Captura de tela 2023-09-22 223258](https://github.com/diwalker/Bugaboo-Studio-Test/assets/13918844/98db46e1-16ae-48fa-a7ce-ef826f84ab74)
+![image](https://github.com/diwalker/Bugaboo-Studio-Test/assets/13918844/40a2fc17-f4cb-4ec0-8bae-870ef8895dd1)
+![image](https://github.com/diwalker/Bugaboo-Studio-Test/assets/13918844/8943f74d-bfae-4faf-a9ca-87b28e970229)
+![image](https://github.com/diwalker/Bugaboo-Studio-Test/assets/13918844/6e4624e6-947d-4de7-8b5f-a68ca0ecf46a)
 
 # Rodando o Projeto.
 Primeiramente abra o Cmd ou Terminal e clone o repositório em alguma pasta de sua escolha com<br> 
 `git clone https://github.com/diwalker/Bugaboo-Studio-Test.git`, no meu caso em Documentos.
-![image](https://github.com/diwalker/Bugaboo-Studio-Test/assets/13918844/33536a56-8def-41d8-9651-f61bce1a1508)
 
 Abra a pasta do projeto com `cd Bugaboo-Studio-Test` e depois rode `npm install` e aguarde a instalação das dependências.
-![image](https://github.com/diwalker/Bugaboo-Studio-Test/assets/13918844/edab4381-4fe8-4dbf-9771-a6dbf661d51c)
 
 Após a instalação de dependências, limpe a tela com `cls` se for Windows ou `clear` no Terminal Linux, precisamos rodar o servidor para o gerenciamento do projeto.
 Para isso, entre no diretório do gerenciador com `cd back` e logo em seguida execute o servidor com `node server.js`. Ele irá ficar rodando na porta:3000 como a imagem abaixo.
-![image](https://github.com/diwalker/Bugaboo-Studio-Test/assets/13918844/4083e0cb-f49b-45f1-8274-8e33eca62ea7)
 
 Agora, com o servidor rodando. entre a pasta do projeto e abra o arquivo index.html, irá abrir o Form de Login para autencicação.
 Entre com o seguinte usuário e senha e clique em Fazer Login:
 email: dwalkerserver@gmail.com
 password: ogumiansa13@
-![image](https://github.com/diwalker/Bugaboo-Studio-Test/assets/13918844/2243cf21-6017-4189-9ff7-ff258572abe9)
 
 Irá abrir o Gerenciador de arquivos, com as opções de envio, exibição de arquivos e se clicado no link do arquivo enviado, abre um modal visualizando o arquivo .GLB podendo controlar o arquivodentro do modal com o mouse!
-![image](https://github.com/diwalker/Bugaboo-Studio-Test/assets/13918844/d0e67438-d8b4-4518-9dac-7f1a133cce94)
-![image](https://github.com/diwalker/Bugaboo-Studio-Test/assets/13918844/798d18f4-dca8-4608-a022-e854b38ef7aa)
 
 Excelente desafio, que me fez estudar mais sobre a extensão GLB e como a visualizar. Agradeço imensamente a oportunidade e aguardo um retorno positivo.<br>
 Diego Silva.
