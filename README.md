@@ -20,26 +20,6 @@ a. Use o Model Viewer (https://modelviewer.dev/) para exibir os arquivos GLB
 carregados.
 b. Crie uma visualização dedicada do Model Viewer para cada arquivo GLB.
 
-# Dependências do Projeto
-As seguintes bibliotecas e módulos foram usados neste projeto:
-
-- [**cors**](https://www.npmjs.com/package/cors) (^2.8.5) 🔄 - Middleware para permitir solicitações de origens cruzadas (CORS).
-- [**express**](https://www.npmjs.com/package/express) (^4.17.1) 🚀 - Framework web para Node.js.
-- [**firebase**](https://www.npmjs.com/package/firebase) (^9.4.0) 🔥 - Biblioteca para integração com o Firebase.
-- [**fs**](https://www.npmjs.com/package/fs) (0.0.1-security) 📁 - Módulo de sistema de arquivos (File System).
-- [**jsonwebtoken**](https://www.npmjs.com/package/jsonwebtoken) (^9.0.2) 🔐 - Implementação de JSON Web Tokens (JWT).
-- [**mime-types**](https://www.npmjs.com/package/mime-types) (^2.1.30) 📃 - Biblioteca para trabalhar com tipos MIME.
-- [**multer**](https://www.npmjs.com/package/multer) (^1.4.2) 📁 - Middleware para manipulação de uploads de arquivos.
-- [**path**](https://www.npmjs.com/package/path) (^0.12.7) 📂 - Utilitário para manipulação de caminhos de arquivo.
-- [**esm**](https://www.npmjs.com/package/esm) (^3.2.25) 🔍 - Suporte a ECMAScript Modules para o Node.js.
-- [**express**](https://www.npmjs.com/package/express) (^4.18.2) 🚀 - Framework web para Node.js.
-- [**express-fileupload**](https://www.npmjs.com/package/express-fileupload) (^1.4.0) 📤 - Middleware para lidar com uploads de arquivos no Express.
-- [**file-type**](https://www.npmjs.com/package/file-type) (^18.5.0) 📄 - Detector de tipos de arquivos baseado em cabeçalhos de arquivo.
-- [**fs**](https://www.npmjs.com/package/fs) (^0.0.1-security) 📁 - Módulo de sistema de arquivos (File System).
-- [**multer**](https://www.npmjs.com/package/multer) (^1.4.5-lts.1) 📁 - Middleware para manipulação de uploads de arquivos.
-
-Certifique-se de instalar essas dependências usando `npm install` antes de iniciar seu projeto.
-
 # Screenshots do Projeto.
 Página de Login.
 ![image](https://github.com/diwalker/Bugaboo-Studio-Test/assets/13918844/f6659b53-e235-4f10-bb82-6232e2902373)
